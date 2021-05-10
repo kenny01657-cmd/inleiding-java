@@ -3,7 +3,7 @@ package h03;
 import java.applet.Applet;
 import java.awt.*;
 
-public class GelijkbenigeDriehoek extends Applet {
+public class House extends Applet {
 
     public void init() {
 
