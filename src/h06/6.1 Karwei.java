@@ -5,6 +5,7 @@ import java.applet.*;
 
 
 public class Karwei extends Applet {
+    // Declareren
     double totaalBedrag;
     double bedragJan;
     double bedragAli;
@@ -21,6 +22,7 @@ public class Karwei extends Applet {
 
 
     public void init() {
+        // Initialiseren
         aantalPersonen = 4;
         totaalBedrag = 113;
         bedragJan = totaalBedrag/aantalPersonen;
@@ -37,6 +39,7 @@ public class Karwei extends Applet {
     }
 
     public void paint(Graphics g) {
+        // Applet
         g.drawString("Het totaal bedrag is: " + totaalBedrag + " euro",X,Y);
         g.drawString("Jan krijgt: " + bedragJan + " euro",X,Y1);
         g.drawString("Ali krijgt: " + bedragAli + " euro",X,Y2);
