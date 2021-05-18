@@ -16,10 +16,14 @@ public class Opdr_Vijf_En_Praktijkopdracht_GemiddeldeCijfer extends Applet {
     String beoordeling1, beoordeling2, beoordeling3, beoordeling4, beoordeling5, beoordeling6;
     double gemiddeldeCijfer;
     String tekst;
+    int X;
+    int Y;
 
 
     public void init() {
         // Initialiseren
+        X = 50;
+        Y = 60;
         tekst = "";
         tekstvak = new TextField("",10);
         label = new Label("Type hier uw cijfer");
@@ -33,24 +37,24 @@ public class Opdr_Vijf_En_Praktijkopdracht_GemiddeldeCijfer extends Applet {
     public void paint(Graphics g){
         // Cijfers met beoordeling
         if (cijfer1 > 0) {
-            g.drawString("" + cijfer1 + " " + beoordeling1, 50, 60);
+            g.drawString("" + cijfer1 + " " + beoordeling1, X, Y);
         }
         if(cijfer2 > 0) {
-            g.drawString("" + cijfer2 + " " + beoordeling2, 50, 80);
+            g.drawString("" + cijfer2 + " " + beoordeling2, X, Y+20);
         }
         if (cijfer3 > 0) {
-            g.drawString("" + cijfer3 + " " + beoordeling3, 50, 100);
+            g.drawString("" + cijfer3 + " " + beoordeling3, X, Y+40);
         }
         if (cijfer4 > 0) {
-            g.drawString("" + cijfer4 + " " + beoordeling4, 50, 120);
+            g.drawString("" + cijfer4 + " " + beoordeling4, X, Y+60);
         }
         if (cijfer5 > 0) {
-            g.drawString("" + cijfer5 + " " + beoordeling5, 50, 140);
+            g.drawString("" + cijfer5 + " " + beoordeling5, X, Y+80);
         }
         // Waarschuwing tekst
-        g.drawString(tekst,100,210);
+        g.drawString(tekst,X+50,Y+150);
         // Gemiddelde cijfer en beoordeling weergeven
-        g.drawString("Je gemiddelde cijfer is: " + gemiddeldeCijfer + " " + beoordeling6, 150, 250);
+        g.drawString("Je gemiddelde cijfer is: " + gemiddeldeCijfer + " " + beoordeling6, X+100, Y+190);
     }
 
     class KnopListener implements ActionListener {
