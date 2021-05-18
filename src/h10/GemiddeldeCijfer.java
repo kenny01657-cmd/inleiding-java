@@ -168,12 +168,6 @@ public class GemiddeldeCijfer extends Applet {
                     beoordeling6 = "goed";
                 }
 
-                System.out.println(cijfer1);
-                System.out.println(cijfer2);
-                System.out.println(cijfer3);
-                System.out.println(cijfer4);
-                System.out.println(cijfer5);
-                System.out.println(aantalCijfers);
             }
             tekstvak.setText("");
             repaint();
