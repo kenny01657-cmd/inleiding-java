@@ -3,7 +3,7 @@ package h04;
 import java.awt.*;
 import java.applet.*;
 
-public class Dice extends Applet {
+public class Opdr_Zeven_Dice extends Applet {
 
     public void init() {
     }

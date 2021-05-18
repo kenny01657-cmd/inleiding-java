@@ -4,7 +4,7 @@ import java.awt.*;
 import java.applet.*;
 
 
-public class NegatieveInt extends Applet {
+public class Opdr_Drie_NegatieveInt extends Applet {
 int positiveInt;
 int positiveInt2;
 int uitkomst;

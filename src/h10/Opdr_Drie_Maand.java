@@ -4,27 +4,20 @@ import java.applet.Applet;
 import java.awt.*;
 import java.awt.event.*;
 
-public class MaandEnJaar extends Applet {
-    TextField tekstvak,jaarVak;
-    Label label, label2;
+public class Opdr_Drie_Maand extends Applet {
+    TextField tekstvak;
+    Label label;
     String maandNaam;
     int maand;
-    Button knop;
-    int jaartal;
 
     public void init() {
-        jaarVak = new TextField("",20);
         tekstvak = new TextField("",20);
-        label2 = new Label("Type het jaarnummer");
-        label = new Label("Type het maandnummer");
-        knop = new Button("Ok");
-        knop.addActionListener(new knopListener());
+        label = new Label("Type het maandnummer en druk op enter");
+        tekstvak.addActionListener(new TekstVakListener());
         maandNaam = "";
         add(label);
         add(tekstvak);
-        add(label2);
-        add(jaarVak);
-        add(knop);
+
     }
 
     public void paint(Graphics g){
@@ -32,21 +25,15 @@ public class MaandEnJaar extends Applet {
 
     }
 
-    class knopListener implements ActionListener {
+    class TekstVakListener implements ActionListener {
         public void actionPerformed(ActionEvent e){
-            jaartal = Integer.parseInt(jaarVak.getText());
             maand = Integer.parseInt(tekstvak.getText());
             switch(maand){
                 case 1:
                     maandNaam = "Januari, 31 dagen";
                     break;
                 case 2:
-                    if ((jaartal % 4 == 0 && !(jaartal % 100 == 0)) || jaartal % 400 == 0){
-                    maandNaam = "Februari, 29 dagen";
-                    }
-                    else {
-                        maandNaam = "Februari, 28 dagen";
-                    }
+                    maandNaam = "Februari, 28 dagen";
                     break;
                 case 3:
                     maandNaam = "Maart, 31 dagen";
@@ -79,9 +66,9 @@ public class MaandEnJaar extends Applet {
                     maandNaam = "December, 30 dagen";
                     break;
             }
+            tekstvak.setText("");
             repaint();
         }
     }
 
 }
-

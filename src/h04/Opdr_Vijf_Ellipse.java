@@ -3,7 +3,7 @@ package h04;
 import java.awt.*;
 import java.applet.Applet;
 
-public class Ellipse extends Applet {
+public class Opdr_Vijf_Ellipse extends Applet {
 
 
     public void init() {

@@ -5,16 +5,18 @@ import java.applet.Applet;
 import java.awt.*;
 
 // een klasse met de naam FirstApplet van het type applet
-public class FirstApplet extends Applet {
+public class Opdr_Twee_SecondApplet extends Applet {
 
     // een (lege) methode die de applet initialiseert
     public void init() {
-        setBackground(Color.blue);
+        setBackground(Color.white);
     }
 
     // een methode die de inhoud van het scherm tekent
     public void paint(Graphics g) {
-        g.setColor(Color.yellow);
-        g.drawString("Kenny Meijer", 50, 60);
+        g.setColor(Color.blue);
+        g.drawString("Kenny", 50, 60);
+        g.setColor(Color.red);
+        g.drawString("Meijer", 50, 80);
     }
 }

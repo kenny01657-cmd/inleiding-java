@@ -4,7 +4,7 @@ import java.awt.*;
 import java.applet.*;
 
 
-public class Karwei extends Applet {
+public class Opdr_Een_Karwei extends Applet {
     double totaalBedrag;
     double bedragJan;
     double bedragAli;

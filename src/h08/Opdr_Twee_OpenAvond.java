@@ -6,7 +6,7 @@ import java.applet.*;
 import java.awt.event.*;
 
 
-public class OpenAvond extends Applet {
+public class Opdr_Twee_OpenAvond extends Applet {
     TextField tekstvak1;
     TextField tekstvak2;
     TextField tekstvak3;

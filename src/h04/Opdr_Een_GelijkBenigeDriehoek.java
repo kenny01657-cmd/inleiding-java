@@ -3,7 +3,7 @@ package h04;
 import java.applet.Applet;
 import java.awt.*;
 
-public class GelijkBenigeDriehoek extends Applet {
+public class Opdr_Een_GelijkBenigeDriehoek extends Applet {
 
     public void init() {
 

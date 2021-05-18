@@ -3,7 +3,7 @@ package h05;
 import java.awt.*;
 import java.applet.Applet;
 
-public class StaafDiagram extends Applet {
+public class Opdr_Twee_StaafDiagram extends Applet {
     int GewichtValerie;
     int GewichtJeroen;
     int GewichtHans;

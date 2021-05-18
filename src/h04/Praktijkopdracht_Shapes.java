@@ -3,7 +3,7 @@ package h04;
 import java.awt.*;
 import java.applet.*;
 
-public class Shapes extends Applet {
+public class Praktijkopdracht_Shapes extends Applet {
 
     public void init() {
     }

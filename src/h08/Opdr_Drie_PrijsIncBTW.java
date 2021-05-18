@@ -6,7 +6,7 @@ import java.applet.*;
 import java.awt.event.*;
 
 
-public class PrijsIncBTW extends Applet {
+public class Opdr_Drie_PrijsIncBTW extends Applet {
     TextField tekstvak;
     Button knop;
     Label label;

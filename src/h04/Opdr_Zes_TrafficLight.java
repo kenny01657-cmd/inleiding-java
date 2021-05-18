@@ -3,7 +3,7 @@ package h04;
 import java.awt.*;
 import java.applet.*;
 
-public class TrafficLight extends Applet {
+public class Opdr_Zes_TrafficLight extends Applet {
 
     public void init() {
     }

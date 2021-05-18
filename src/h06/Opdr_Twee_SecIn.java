@@ -4,7 +4,7 @@ import java.awt.*;
 import java.applet.*;
 
 
-public class SecIn extends Applet {
+public class Opdr_Twee_SecIn extends Applet {
     int secInUur;
     int secInDag;
     int secInJaar;

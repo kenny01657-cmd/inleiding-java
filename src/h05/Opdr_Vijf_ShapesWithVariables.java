@@ -3,7 +3,7 @@ package h05;
 import java.awt.*;
 import java.applet.*;
 
-public class ShapesWithVariables extends Applet {
+public class Opdr_Vijf_ShapesWithVariables extends Applet {
     // declaratie
 
     // kleur

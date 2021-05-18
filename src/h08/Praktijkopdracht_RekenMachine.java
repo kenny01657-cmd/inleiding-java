@@ -4,7 +4,7 @@ import java.applet.Applet;
 import java.awt.*;
 import java.awt.event.*;
 
-public class RekenMachine extends Applet {
+public class Praktijkopdracht_RekenMachine extends Applet {
     TextField getal1;
     TextField getal2;
     Button keer;

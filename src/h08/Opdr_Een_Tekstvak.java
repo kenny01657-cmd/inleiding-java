@@ -6,7 +6,7 @@ import java.applet.*;
 import java.awt.event.*;
 
 
-public class Tekstvak extends Applet {
+public class Opdr_Een_Tekstvak extends Applet {
     TextField tekstvak;
     Label label;
     Button ok_Knop;

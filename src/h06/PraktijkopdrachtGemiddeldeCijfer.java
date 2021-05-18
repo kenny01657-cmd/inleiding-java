@@ -4,7 +4,7 @@ import java.awt.*;
 import java.applet.*;
 
 
-public class GemiddeldeCijfer extends Applet {
+public class PraktijkopdrachtGemiddeldeCijfer extends Applet {
     double cijfer1;
     double cijfer2;
     double cijfer3;

@@ -4,7 +4,7 @@ import java.applet.Applet;
 import java.awt.*;
 import java.awt.event.*;
 
-public class HoogsteGetal extends Applet {
+public class Opdr_Een_HoogsteGetal extends Applet {
     TextField tekstvak;
     Label label;
     double hoogsteGetal;

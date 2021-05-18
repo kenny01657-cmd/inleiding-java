@@ -3,7 +3,7 @@ package h04;
 import java.applet.Applet;
 import java.awt.*;
 
-public class NederlandseVlag extends Applet {
+public class Opdr_Drie_NederlandseVlag extends Applet {
 
     public void init() {
 
