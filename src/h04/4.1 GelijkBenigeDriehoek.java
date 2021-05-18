@@ -10,7 +10,7 @@ public class GelijkBenigeDriehoek extends Applet {
     }
 
     public void paint(Graphics g){
-        // house
+        // Driehoek
         g.drawLine(100,120,250,120);
         g.drawLine(100,120,175,20);
         g.drawLine(250,120,175,20);
