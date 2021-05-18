@@ -5,7 +5,7 @@ import java.applet.Applet;
 import java.awt.*;
 import java.awt.event.*;
 
-public class GemiddeldeCijfer extends Applet {
+public class Opdr_Vijf_En_Praktijkopdracht_GemiddeldeCijfer extends Applet {
     // Declareren
     TextField tekstvak;
     Label label;
