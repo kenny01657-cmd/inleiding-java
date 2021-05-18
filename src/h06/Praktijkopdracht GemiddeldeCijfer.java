@@ -10,6 +10,8 @@ public class GemiddeldeCijfer extends Applet {
     double cijfer3;
     double gemiddeldeCijfer;
     int hoeveelheidCijfers;
+    int x;
+    int y;
 
     public void init() {
         cijfer1 = 5.9;
@@ -19,12 +21,14 @@ public class GemiddeldeCijfer extends Applet {
         gemiddeldeCijfer = ((cijfer1 + cijfer2 + cijfer3)/hoeveelheidCijfers)*10;
         gemiddeldeCijfer = (int) gemiddeldeCijfer;
         gemiddeldeCijfer = gemiddeldeCijfer/10;
+        x = 20;
+        y = 20;
 
 
     }
 
     public void paint(Graphics g) {
-        g.drawString("Behaalde cijfers: " + cijfer1 + ", " + cijfer2 + ", " + cijfer3,20,20);
-        g.drawString("Het gemiddelde is: " + gemiddeldeCijfer,20,35);
+        g.drawString("Behaalde cijfers: " + cijfer1 + ", " + cijfer2 + ", " + cijfer3,x,y);
+        g.drawString("Het gemiddelde is: " + gemiddeldeCijfer,x,y+15);
     }
 }
