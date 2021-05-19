@@ -4,18 +4,20 @@ import java.applet.Applet;
 import java.awt.*;
 
 public class Opdr_Negen_SchaakBord extends Applet {
+    // Declareren en Initialiseren
     int width = 30;
     int height = 30;
+    int X = 70;
+    int Y = 20;
+    Color color1 = Color.black;
+    Color color2 = Color.white;
 
     public void init() {
         setBackground(Color.gray);
     }
 
     public void paint(Graphics g){
-        int X = 70;
-        int Y = 20;
-        Color color1 = Color.black;
-        Color color2 = Color.white;
+        // Schaakbord
         for(int velden = 0; velden < 32; velden++){
             g.setColor(color1);
             g.fillRect(X,Y,width,height);
