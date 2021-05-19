@@ -9,7 +9,7 @@ public class Opdr_Vijf_VierKanten extends Applet {
     }
 
     public void paint(Graphics g){
-        // Declareren en Initialiseren
+        // Declareren en Initaliseren
         int X = 20;
         int Y = 20;
         int width = 20;
