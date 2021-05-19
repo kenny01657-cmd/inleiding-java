@@ -18,11 +18,14 @@ public class Opdr_Negen_SchaakBord extends Applet {
 
     public void paint(Graphics g){
         // Schaakbord
-        for(int velden = 0; velden < 32; velden++){
+        for(int velden = 0; velden < 64/2; velden++){
+
+            // veld 1
             g.setColor(color1);
             g.fillRect(X,Y,width,height);
             X += width;
 
+            // veld 2
             g.setColor(color2);
             g.fillRect(X,Y,width,height);
             X += width;
