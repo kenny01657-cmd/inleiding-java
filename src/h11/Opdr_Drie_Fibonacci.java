@@ -14,11 +14,12 @@ public class Opdr_Drie_Fibonacci extends Applet {
         int nummer = 0;
         int vorigNummer = 0;
         int vorigNummer1 = 1;
+        int Y = 60;
 
 
         for(teller = 0; teller < 10; teller++){
             X += 20;
-            g.drawString("" + nummer,X,60);
+            g.drawString("" + nummer,X,Y);
             nummer = vorigNummer + vorigNummer1;
             vorigNummer1 = vorigNummer;
             vorigNummer = nummer;
