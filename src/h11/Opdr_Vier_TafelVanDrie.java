@@ -20,7 +20,7 @@ public class Opdr_Vier_TafelVanDrie extends Applet {
         for (teller = 1; teller < 11; teller++){
             Y += 20;
             berekening = teller * Tafel;
-            g.drawString("" + teller + " * " + Tafel + " = " + berekening,X,Y);
+            g.drawString("" + teller + " x " + Tafel + " = " + berekening,X,Y);
         }
     }
 
