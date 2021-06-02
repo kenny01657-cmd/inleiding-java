@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Opdr_Vier_Tabel extends Applet{
+public class Opdr_Vier_En_Vijf_Tabel extends Applet{
     TextField tekstVak;
     Button knop;
     int getal;
