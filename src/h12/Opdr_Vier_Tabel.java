@@ -30,6 +30,8 @@ public class Opdr_Vier_Tabel extends Applet{
                 if (getal == tabel[i]) {
                     gevonden = true;
                     index = i;
+                    // als de waarde is gevonden stopt de loop
+                    break;
                 }
             }
             if (gevonden){
