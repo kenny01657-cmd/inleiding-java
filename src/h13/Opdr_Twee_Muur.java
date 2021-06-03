@@ -32,12 +32,10 @@ public class Opdr_Twee_Muur extends Applet {
                 g.drawRect(X,Y,width/2,height);
                 X -= width*7-(width/2);
                 Y += height;
-                if(i < 56) {
-                    g.setColor(Color.red);
-                    g.fillRect(X - (width / 2), Y, width / 2, height);
-                    g.setColor(Color.black);
-                    g.drawRect(X - (width / 2), Y, width / 2, height);
-                }
+                g.setColor(Color.red);
+                g.fillRect(X - (width / 2), Y, width / 2, height);
+                g.setColor(Color.black);
+                g.drawRect(X - (width / 2), Y, width / 2, height);
             }
             else if (X == (X1+width/2) + width*7){
                 X -= width*7+(width/2);
