@@ -26,7 +26,11 @@ public class Opdr_Twee_Muur extends Applet {
             X += width;
 
             if(X == X1 + width*10){
-                X -= width*10;
+                X -= width*10-(width/2);
+                Y += height;
+            }
+            else if (X == (X1+width/2) + width*10){
+                X -= width*10+(width/2);
                 Y += height;
             }
         }
