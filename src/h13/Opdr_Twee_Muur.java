@@ -6,7 +6,7 @@ import java.awt.*;
 public class Opdr_Twee_Muur extends Applet {
 
     public void init() {
-        setSize(600,300);
+        setSize(500,300);
     }
 
     public void paint(Graphics g) {
@@ -17,7 +17,7 @@ public class Opdr_Twee_Muur extends Applet {
         int aantalBakstenen;
         int X1;
         X1 = X;
-        aantalBakstenen = 70;
+        aantalBakstenen = 56;
         for(int i = 0; i < aantalBakstenen; i++){
             g.setColor(Color.RED);
             g.fillRect(X,Y,width,height);
@@ -25,12 +25,22 @@ public class Opdr_Twee_Muur extends Applet {
             g.drawRect(X,Y,width,height);
             X += width;
 
-            if(X == X1 + width*10){
-                X -= width*10-(width/2);
+            if(X == X1 + width*7){
+                g.setColor(Color.red);
+                g.fillRect(X,Y,width/2,height);
+                g.setColor(Color.black);
+                g.drawRect(X,Y,width/2,height);
+                X -= width*7-(width/2);
                 Y += height;
+                if(i < 69) {
+                    g.setColor(Color.red);
+                    g.fillRect(X - (width / 2), Y, width / 2, height);
+                    g.setColor(Color.black);
+                    g.drawRect(X - (width / 2), Y, width / 2, height);
+                }
             }
-            else if (X == (X1+width/2) + width*10){
-                X -= width*10+(width/2);
+            else if (X == (X1+width/2) + width*7){
+                X -= width*7+(width/2);
                 Y += height;
             }
         }
