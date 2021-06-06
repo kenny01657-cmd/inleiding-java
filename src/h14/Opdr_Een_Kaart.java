@@ -18,19 +18,19 @@ public class Opdr_Een_Kaart extends Applet {
     }
 
     public void paint(Graphics g) {
-        g.drawString("" + cardColor[color-1] + " " + cardType[type-1],160,50);
+        g.drawString("" + cardColor[color-1] + " " + cardType[type-1],160,60);
     }
 
     class ShuffleListener implements ActionListener {
         public void actionPerformed(ActionEvent e){
             double getal;
             getal = Math.random();
-            color = (int)(getal * 4 + 1);
+            color = (int)(getal * (cardColor.length-1) + 1);
+            System.out.println(color);
             getal = Math.random();
-            type = (int)(getal * 13 + 1);
+            type = (int)(getal * (cardType.length-1) + 1);
+            System.out.println(type);
             repaint();
         }
     }
-
-
 }
