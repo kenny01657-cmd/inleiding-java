@@ -5,9 +5,12 @@ import java.applet.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Arrays;
+import java.net.URL;
 
 public class Opdr_Twee_DeelKaart extends Applet {
     // Initialsieren en declareren
+    private URL pad;
+    private AudioClip sound;
     double getal;
     boolean duplicate = false;
     String card;
@@ -19,6 +22,8 @@ public class Opdr_Twee_DeelKaart extends Applet {
 
     public void init() {
         setSize(500,400);
+        pad = Opdr_Twee_DeelKaart.class.getResource("/recources/");
+        sound = getAudioClip(pad, "137523215.wav");
         shuffle = new Button("Shuffle");
         shuffle.addActionListener(new ShuffleListener());
         add(shuffle);
@@ -65,6 +70,7 @@ public class Opdr_Twee_DeelKaart extends Applet {
             // genereer een deck
             generateDeck();
             repaint();
+            sound.play();
             // Controlleerd op duplicatie's
             for (int i = 0; i < deck.length; i++) {
                 for (int j = i + 1 ; j < deck.length; j++) {
