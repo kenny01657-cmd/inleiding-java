@@ -100,7 +100,7 @@ public class Opdr_Twee_DeelKaart extends Applet {
                 duplicate = true;
                 break;
             }
-            else if (!card.equals(deck[deck.length - 1])) {
+            else {
                 duplicate = false;
             }
         }
