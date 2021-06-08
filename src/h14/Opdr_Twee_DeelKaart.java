@@ -65,7 +65,7 @@ public class Opdr_Twee_DeelKaart extends Applet {
     class ShuffleListener implements ActionListener {
         public void actionPerformed(ActionEvent e){
             int aantal = 0;
-            // Reset de array deck
+            // Reset de array "deck"
             Arrays.fill(deck, "");
             // genereer een deck
             generateDeck();
