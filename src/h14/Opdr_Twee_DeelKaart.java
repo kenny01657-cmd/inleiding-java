@@ -8,8 +8,6 @@ import java.util.Arrays;
 import java.net.URL;
 
 public class Opdr_Twee_DeelKaart extends Applet {
-    // Initialsieren en declareren
-    private URL pad;
     private AudioClip sound;
     double getal;
     boolean duplicate = false;
@@ -22,7 +20,8 @@ public class Opdr_Twee_DeelKaart extends Applet {
 
     public void init() {
         setSize(500,400);
-        pad = Opdr_Twee_DeelKaart.class.getResource("/recources/");
+        // Initialsieren en declareren
+        URL pad = Opdr_Twee_DeelKaart.class.getResource("/recources/");
         sound = getAudioClip(pad, "137523215.wav");
         shuffle = new Button("Shuffle");
         shuffle.addActionListener(new ShuffleListener());
