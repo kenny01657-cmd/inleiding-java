@@ -19,8 +19,8 @@ public class Opdr_Twee_DeelKaart extends Applet {
     String[] cardType = {"Twee", "Drie", "Vier", "Vijf", "Zes", "Zeven", "Acht", "Negen", "Tien", "Boer", "Vrouw", "Heer", "Aas"};
 
     public void init() {
-        setSize(500,400);
         // Initialsieren en declareren
+        setSize(500,400);
         URL pad = Opdr_Twee_DeelKaart.class.getResource("/recources/");
         sound = getAudioClip(pad, "137523215.wav");
         shuffle = new Button("Shuffle");
