@@ -117,22 +117,22 @@ public class Praktijk_Opdr extends Applet {
 
     void computer(){
         // De strategie van de computer
-        if (stones >= 21) {
+        if (stones > 21) {
             computerNum = stones - 21;
         }
-        else if (stones >= 17) {
+        else if (stones > 17) {
             computerNum = stones - 17;
         }
-        else if (stones >= 13) {
+        else if (stones > 13) {
             computerNum = stones - 13;
         }
-        else if (stones >= 9) {
+        else if (stones > 9) {
             computerNum = stones - 9;
         }
-        else if (stones >= 5) {
+        else if (stones > 5) {
             computerNum = stones - 5;
         }
-        else if (stones >= 1) {
+        else if (stones > 1) {
             computerNum = stones - 1;
         }
         // Vermindert de stenen met het nummer van de computer
