@@ -132,6 +132,9 @@ public class Praktijk_Opdr extends Applet {
         else if (stones >= 5) {
             computerNum = stones - 5;
         }
+        else if (stones >= 1) {
+            computerNum = stones - 1;
+        }
         // Vermindert de stenen met het nummer van de computer
         stones -= computerNum;
         // Geeft de beurt aan de player
