@@ -59,7 +59,7 @@ public class Praktijk_Opdr extends Applet {
 
                 // Wanneer er een verkeerde input is gegeven wordt er een waarschuwing weergeven
                 else {
-                    g.drawString(playerText, 5,40);
+                    g.drawString(playerText, 80,40);
                 }
             }
 
@@ -76,10 +76,10 @@ public class Praktijk_Opdr extends Applet {
             }
 
             // Weergeeft de hoeveelheid stenen en welke beurt het is
-            g.drawString("Stone count: " + stones + "." + Turn,5,60);
+            g.drawString("Stone count: " + stones + "." + Turn,80,60);
             // Weergeeft wat de computer heeft gespeeld
             if(computerNum > 0 & playerText.equals("")) {
-                g.drawString(computerText + computerNum, 5, 40);
+                g.drawString(computerText + computerNum, 80, 40);
             }
         }
         // Wanneer het spel over is:
@@ -136,6 +136,9 @@ public class Praktijk_Opdr extends Applet {
             computerNum = stones - 1;
         }
         // Vermindert de stenen met het nummer van de computer
+        if(computerNum > 3){
+            computerNum = 3;
+        }
         stones -= computerNum;
         // Geeft de beurt aan de player
         turn = true;
@@ -144,7 +147,7 @@ public class Praktijk_Opdr extends Applet {
     void stones(Graphics g){
         // Declareren en initialiseren van de coördinaten en de grootte van de stenen
         int X, Xprev, Y, width, height;
-        X = 50;
+        X = 80;
         Xprev = X;
         Y = 80;
         width = 20;
