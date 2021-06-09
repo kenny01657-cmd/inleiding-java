@@ -79,7 +79,7 @@ public class Opdr_Twee_DeelKaart extends Applet {
                 }
             }
             // Print de hoeveelheid duplicatie's
-            System.out.println(aantal);
+            System.out.println("Aantal duplicaten: " + aantal);
         }
     }
 
